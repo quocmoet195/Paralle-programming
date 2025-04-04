@@ -138,8 +138,9 @@ int main() {
     int time_80 = run("Matrix_1/matrix1_80.txt", "Matrix_2/matrix2_80.txt", "Output/output_80.txt");
     int time_90 = run("Matrix_1/matrix1_90.txt", "Matrix_2/matrix2_90.txt", "Output/output_90.txt");
     int time_100 = run("Matrix_1/matrix1_100.txt", "Matrix_2/matrix2_100.txt", "Output/output_100.txt");
+    int time_1000 = run("Matrix_1/matrix1_1000.txt", "Matrix_2/matrix2_1000.txt", "Output/output_1000.txt");
     stringstream  total_times;
-    total_times << time_10 << ", " << time_20 << ", " << time_30 << ", " << time_40 << ", " << time_50 << ", " << time_60 << ", " << time_70 << ", " << time_80 << ", " << time_90 << ", " << time_100;
+    total_times << time_10 << ", " << time_20 << ", " << time_30 << ", " << time_40 << ", " << time_50 << ", " << time_60 << ", " << time_70 << ", " << time_80 << ", " << time_90 << ", " << time_100 << ", " << time_1000;
     string times = total_times.str();
     writeTime(times, "times_openmp.txt"); 
     return 0;
